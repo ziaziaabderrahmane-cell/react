@@ -5,7 +5,9 @@ import { useReducer } from 'react'
     if (currentNumber ===5) {
       return 0
     }
+   if (type === "+") {
     return currentNumber+1
+   }
   },0)
   return (<>
   <button onClick={()=>{ setNumber("+")}}>{number}</button>
